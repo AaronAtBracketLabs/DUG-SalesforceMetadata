@@ -1,0 +1,16 @@
+{
+    "projectName": "GetDescribe",
+    "username": "test@getdescribedug.com",
+    "id": "d809cc60-3758-11e7-93fa-db8f95a2f660",
+    "namespace": "",
+    "environment": "production",
+    "loginUrl": "https://login.salesforce.com/",
+    "workspace": "/Users/aaron/Desktop/Development/Salesforce",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}
