@@ -7,12 +7,12 @@ public with sharing class ObjectRetrieve {
     public List<String> displayedFields{get;set;}
     
     public List<SelectOption> getobjNames(){
-        List<Schema.SObjectType> gd = Schema.getGlobalDescribe().Values();
+        List<Schema.SObjectType> globalDescribeValues = Schema.getGlobalDescribe().Values();
         List<SelectOption> options = new List<SelectOption>();
         options.add(new SelectOption('--None','--None--'));
-        for(Schema.SObjectType f : gd){
-            if(f.getDescribe().getName().contains('__c')){
-                options.add(new SelectOption(f.getDescribe().getName(),f.getDescribe().getName()));
+        for(Schema.SObjectType sObjType : globalDescribeValues){
+            if(sObjType.getDescribe().getName().contains('__c')){
+                options.add(new SelectOption(sObjType.getDescribe().getName(),sObjType.getDescribe().getLabel()));
             }
         }
        return options;
@@ -37,7 +37,6 @@ public with sharing class ObjectRetrieve {
                 displayedFields.add(fieldDescribe.getLabel());
             }
         }
-        system.debug(String.join(selectFields, ', '));        
         String queryString = 'SELECT ' + String.join(selectFields, ', ') + ' FROM ' + currentObjectName;
         currentAnimals = Database.query(queryString);
     }
