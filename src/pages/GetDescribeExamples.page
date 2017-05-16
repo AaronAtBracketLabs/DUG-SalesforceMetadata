@@ -12,20 +12,20 @@
     </apex:form>
    <apex:form >     
    <table>
+        <tr>
+            <apex:repeat value="{!displayedFields}" var="fieldLabel">
+                <th style="border-bottom: solid black 2px;">{!fieldLabel}</th>
+            </apex:repeat>
+        </tr>
+        <apex:repeat value="{!currentRecords}" var="currentRecord">
             <tr>
-                <apex:repeat value="{!displayedFields}" var="fieldLabel">
-                    <th style="border-bottom: solid black 2px;">{!fieldLabel}</th>
-                </apex:repeat>
-            </tr>
-        <apex:repeat value="{!currentAnimals}" var="currentAnimal">
-            <tr>
-                <td>{!currentAnimal['Name']}</td>
+                <td>{!currentRecord['Name']}</td>
                 <apex:repeat value="{!selectFields}" var="fieldName">
-                        <apex:outputPanel rendered="{!fieldName != 'Name'}">
+                    <apex:outputPanel rendered="{!fieldName != 'Name'}">
                         <td>
-                            <apex:inputCheckbox value="{!currentAnimal[fieldName]}"/>
+                            <apex:inputCheckbox value="{!currentRecord[fieldName]}"/>
                         </td>
-                        </apex:outputPanel>
+                    </apex:outputPanel>
                 </apex:repeat>
             </tr>
         </apex:repeat>
