@@ -25,12 +25,57 @@
             "annotations": [],
             "location": {
                 "column": 17,
-                "line": 35
+                "line": 34
             },
             "modifiers": [
                 "public"
             ],
             "name": "getAllObjectsList",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 70
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "exampleQuestionOne",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 94
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "exampleQuestionTwo",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 118
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "save",
             "parameters": [],
             "references": [],
             "returnType": "void",
@@ -159,7 +204,7 @@
             "annotations": [],
             "location": {
                 "column": 41,
-                "line": 37
+                "line": 36
             },
             "modifiers": [],
             "name": "orgGlobalDescribe",
@@ -170,7 +215,7 @@
             "annotations": [],
             "location": {
                 "column": 28,
-                "line": 38
+                "line": 37
             },
             "modifiers": [],
             "name": "sObjType",
@@ -181,7 +226,7 @@
             "annotations": [],
             "location": {
                 "column": 42,
-                "line": 40
+                "line": 39
             },
             "modifiers": [],
             "name": "objFields",
@@ -192,7 +237,7 @@
             "annotations": [],
             "location": {
                 "column": 33,
-                "line": 49
+                "line": 48
             },
             "modifiers": [],
             "name": "sObjField",
@@ -203,7 +248,7 @@
             "annotations": [],
             "location": {
                 "column": 40,
-                "line": 51
+                "line": 50
             },
             "modifiers": [],
             "name": "fieldDescribe",
@@ -214,7 +259,7 @@
             "annotations": [],
             "location": {
                 "column": 21,
-                "line": 53
+                "line": 52
             },
             "modifiers": [],
             "name": "isCustom",
@@ -225,7 +270,7 @@
             "annotations": [],
             "location": {
                 "column": 32,
-                "line": 54
+                "line": 53
             },
             "modifiers": [],
             "name": "fieldType",
@@ -236,12 +281,177 @@
             "annotations": [],
             "location": {
                 "column": 16,
-                "line": 62
+                "line": 66
             },
             "modifiers": [],
             "name": "queryString",
             "references": [],
             "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "globalDescribe",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "sObjectInOrg",
+            "references": [],
+            "type": "SObjectType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "dsor",
+            "references": [],
+            "type": "DescribeSObjectResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "fieldSetsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "visibleFieldSet",
+            "references": [],
+            "type": "FieldSet"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "FieldSetMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "globalDescribe",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "sObjectInOrg",
+            "references": [],
+            "type": "SObjectType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "dsor",
+            "references": [],
+            "type": "DescribeSObjectResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 99
+            },
+            "modifiers": [],
+            "name": "fields",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 100
+            },
+            "modifiers": [],
+            "name": "field",
+            "references": [],
+            "type": "SObjectField"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "fieldDescribe",
+            "references": [],
+            "type": "DescribeFieldResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "lookupTo",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "lookupFieldType",
+            "references": [],
+            "type": "SObjectType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "lookupFieldDescribe",
+            "references": [],
+            "type": "DescribeSObjectResult"
         }
     ]
 }

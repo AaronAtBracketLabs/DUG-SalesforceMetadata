@@ -23,12 +23,13 @@
                 <apex:repeat value="{!selectFields}" var="fieldName">
                     <apex:outputPanel rendered="{!fieldName != 'Name'}">
                         <td>
-                            <apex:inputCheckbox value="{!currentRecord[fieldName]}"/>
+                            <apex:inputField value="{!currentRecord[fieldName]}"/>
                         </td>
                     </apex:outputPanel>
                 </apex:repeat>
             </tr>
         </apex:repeat>
         </table>
+        <apex:commandButton value="Save" action="{!save}"/>
     </apex:form>
 </apex:page>
